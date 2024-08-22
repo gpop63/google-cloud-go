@@ -1,9 +1,10 @@
-module cloud.google.com/go/compute
+module github.com/gpop63/google-cloud-go/compute
 
 go 1.21
 
 require (
 	cloud.google.com/go v0.115.1
+	cloud.google.com/go/compute v1.27.4
 	github.com/googleapis/gax-go/v2 v2.13.0
 	google.golang.org/api v0.193.0
 	google.golang.org/genproto v0.0.0-20240814211410-ddb44dafa142
