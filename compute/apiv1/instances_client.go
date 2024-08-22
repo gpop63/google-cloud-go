@@ -950,6 +950,9 @@ func (c *instancesRESTClient) AggregatedList(ctx context.Context, req *computepb
 		if req != nil && req.ServiceProjectNumber != nil {
 			params.Add("serviceProjectNumber", fmt.Sprintf("%v", req.GetServiceProjectNumber()))
 		}
+		if req != nil && req.Fields != nil {
+			params.Add("fields", fmt.Sprintf("%v", req.GetFields()))
+		}
 
 		baseUrl.RawQuery = params.Encode()
 
